@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>PULSA F12 Y ACCEDE A LA CONSOLA</p>
+    
+    <script>
+        function clacularMedia(array){
+            let media = 0;
+            let suma = 0;
+
+            for (let numero of array){
+                if(numero >= 0 && numero <=100){
+                    suma += numero;
+                    media++;
+                }
+            }
+        }
+
+        let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 100];
+        let media = clacularMedia(array);
+        console.log(media);
+
+        class Coche{
+            constructor(modelo, matricula, marca, motor){
+                this.modelo = modelo;
+                this.matricula = matricula;
+                this.marca = marca;
+                this.motor = motor;
+            }
+        }
+        class Motor {
+            constructor(cv, tipoMotor, consumo){
+                this.cv = cv;
+                this.tipoMotor = tipoMotor;
+                this.consumo = consumo;
+            }
+        }
+
+        let motor = new Motor (200, "Gasolina", 20.9);
+        let coche = new Coche ("Yaris", "2020JJJ", "Toyota", motor);
+        console.log(coche);
+    </script>
+</body>
+</html>

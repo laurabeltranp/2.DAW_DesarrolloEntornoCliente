@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ejercicio2.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Calculadora</h1>
+        <input type="text" id="num1" placeholder="Número 1">
+        <select id="operacion">
+            <option value="sumar">Sumar</option>
+            <option value="restar">Restar</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+        </select>
+        <input type="text" id="num2" placeholder="Número 2">
+        <button onclick="calcular()">Calcular</button>
+        <p>Resultado: <span id="resultado"></span></p>
+    </div>
+</body>
+</html>
