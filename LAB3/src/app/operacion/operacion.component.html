@@ -1,0 +1,23 @@
+<h1>Laboratorio 3</h1>
+
+<label> Numero 1: </label>
+<input type="number" [(ngModel)]="numero1">
+<br/> <br/>
+
+<label> Numero 2: </label>
+<input type="number" [(ngModel)]="numero2"/>
+<br/> <br/>
+
+<button (click)="sumar()">Sumar</button>
+<button (click)="restar()">Restar</button>
+<button (click)="multiplicar()">Multiplicar</button>
+<button (click)="dividir()">Dividir</button>
+<br/><br/><br/>
+
+<label>Resultado: </label>
+<input type="number" value="{{resultado}}"/>
+
+<br/>
+<h3 class="rojo" [style]='operacionNoPermitida'>Operación NO permitida</h3>
+<h3 class="verde" [style]='operacionPermitida'>Operación permitida</h3>
+<hr/>
